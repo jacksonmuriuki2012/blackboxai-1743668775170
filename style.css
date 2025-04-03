@@ -1,0 +1,40 @@
+/* Custom Tailwind overrides */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+:root {
+  --primary: #004AAD;
+  --primary-light: #3D7DCA;
+  --primary-dark: #00367D;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300;
+}
+
+.btn-outline {
+  @apply bg-transparent hover:bg-blue-600 text-blue-600 hover:text-white font-bold py-2 px-4 border border-blue-600 rounded transition duration-300;
+}
+
+/* Form styles */
+.form-input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden;
+}
+
+/* Responsive tweaks */
+@media (min-width: 1024px) {
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+}
